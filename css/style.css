@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns:  1fr ;
+    grid-template-rows:repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "seccion"
+        "nota"
+        "nota1"   
+        "footer";
+
+}
+
+
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+   
+}
+
+
+header{
+    display: flex;
+    grid-area: header;
+}
+
+
+.headerNav{ 
+    width: 95%;
+    height: 90px;
+    margin: 0 auto;
+    background-color:rgba(132, 9, 9, 0.874);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.headerLogo img{
+    width: 300px;
+    height:90px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 15px;
+    grid-area: headerLogo;
+}
+
+.headerMenu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.link{
+    color: black;
+    font-weight:bolder;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 23px;
+    
+}
+
+.headerNav .a{
+    font-weight: 300;
+}
+
+.link:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding:15px;
+}
+
+
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    grid-area: cuerpo;
+
+}
+
+.seccion{ 
+    color: whitesmoke;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem ;
+    margin: 1rem;
+    grid-area: seccion;
+
+}
+
+.cuerpo img{
+    height: auto;
+    width: auto;
+   opacity: 0.5;
+
+}
+
+.cuerpo .letrablanca{
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 3rem;
+   
+    
+}
+
+
+
+.cuerpomult{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cuerpomult img{
+    height: 200px;
+    width: 250px;
+    border: 2px double grey;
+    border-radius: 7px;
+    opacity: 0.5;
+}
+
+.cuerpomult img:hover{
+    opacity: 1;
+    border: solid white 2px;
+}
+
+.imgmult{
+    margin: 15px;
+}
+
+.pnot{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+}
+
+
+
+.cuerponot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.imgn{
+    width: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tourimg img{
+    width: 700px;
+    height: 600px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.titulos{
+    color: whitesmoke;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.nota, .nota1{
+    color: whitesmoke;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem ;
+    margin: 1rem;
+    
+   
+}
+
+.nota{grid-area: nota;
+}
+
+.nota1{
+    grid-area: nota1;
+}
+
+footer{
+    background-color:rgba(132, 9, 9, 0.874);
+    height: 5rem;
+    border-radius: 10px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+
+
+footer .text{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+footer img{
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 5px;
+}
+
+footer .footerimg{
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.imggira{
+    height: auto;
+    width: auto;
+}
+
+.hgira{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    margin: auto;
+} 
+
+
+
+.tab{
+    display: flex;
+   justify-content: end;
+   color: rgb(247, 240, 240);
+}
+
+.fecha1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin: auto;
+    border: whitesmoke 5px solid;
+    padding: auto;
+}
+
+tr, th, td{
+    border: white 2px solid;
+}
+ .headeritem{
+    width: 95%;
+    height: 90px;
+    margin: 0 auto;
+    background-color: rgb(161, 151, 151);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .navtienda{
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(105, 101, 101);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .tienda{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px
+ }
+
+ .tienda a{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .tienda a:hover{
+    background-color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+    color: black;
+    
+ }
+
+aside h1{
+    color: aliceblue;
+}
+
+.section1 img{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2 p{
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width:768px)
+ {
+    .container{
+       
+        display: flex;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+            "header"
+            
+            "headerLogo""seccion""nota1" 
+            "nota"
+            
+            "footer";
+    
+    
+    }
+
+    body{
+        margin: 0;
+        background-color: rgb(11, 11, 11);
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .nota{
+        color: green;  
+
+       
+    }
+
+    .headerNav{ 
+        width: 100%;
+        background-color:rgba(42, 9, 132, 0.874);
+        
+    }
+
+    .cuerpomult img{
+        height: 100px;
+        width: 150px;
+    
+    }
+}
