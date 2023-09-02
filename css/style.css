@@ -5,33 +5,23 @@
 }
 
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    grid-template-columns:  1fr ;
-    grid-template-rows:repeat(1, 1fr);
-        grid-template-areas:
-        "header"
-        "seccion"
-        "nota"
-        "nota1"   
-        "footer";
-}
 
 .container1{
-    padding: auto;
-    
+   display: grid;
+   gap: 15px;
+   grid-template-columns: repeat(3, auto);
+   grid-template-rows: repeat(3, auto);
+   grid-template-areas: 
+        "header header header"
+        "col1 col2 col3"
+        "footer footer footer";
 }
-.acordeon{
-  color: red;
 
-}
+
 body{
     margin: 0;
    background-color: black;
-   background: linear-gradient(rgba(5,7,12,0.9),rgba(5,7,12,0.80)),
+   background: linear-gradient(rgba(5,7,12,0.8),rgba(5,7,12,0.98)),
     url(../fotos/fondocalav.jpg);
    opacity: 0.5;
    display: flex;
@@ -44,7 +34,15 @@ header{
     display: flex;
     grid-area: header;
 }
-
+.container1 .col1{
+    grid-area: col1;
+}
+.container1 .col2{
+    grid-area: col2;
+}
+.container1 .col3{
+    grid-area: col3;
+}
 
 .headerNav{ 
     width: 90%;
@@ -334,22 +332,17 @@ tr, th, td{
 
 @media screen and (max-width:768px)
  {
-    .container{
+    .container1{
        
-        display: flex;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4, 1fr);
-            grid-template-areas:
-            "header"
-            
-            "headerLogo""seccion""nota1" 
-            "nota"
-            
-            "footer";
-    
-    
-    }
-
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+             "header"
+             "col1"
+             "col2"
+             "col3"
+             "footer";
+     }
     body{
         margin: 0;
         background-color: rgb(11, 11, 11);
